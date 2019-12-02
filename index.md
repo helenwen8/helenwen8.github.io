@@ -4,6 +4,10 @@ You can use the [editor on GitHub](https://github.com/helenwen8/helenwen8.github
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+# tbh i just want to keep some shit thats online but not everyone know lmao
+its kinda like when I used to write sina blog except that was a shitty time
+we will see if we will keep maintaining this after i can finish dying from tp 
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
