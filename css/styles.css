@@ -1,0 +1,146 @@
+/* Color Theme Swatches in Hex */
+.Knogin-1-hex { color: #F26389; }
+.Knogin-2-hex { color: #011826; }
+.Knogin-3-hex { color: #859CA6; }
+.Knogin-4-hex { color: #73CFD9; }
+.Knogin-5-hex { color: #F2F2F2; }
+
+
+/* Color Theme Swatches in Hex */
+.P.C-calendar-Redesign-1-hex { color: #BF3945; }
+.P.C-calendar-Redesign-2-hex { color: #F2858E; }
+.P.C-calendar-Redesign-3-hex { color: #F2D1B3; }
+.P.C-calendar-Redesign-4-hex { color: #F2A29B; }
+.P.C-calendar-Redesign-5-hex { color: #F2F2F2; }
+
+
+/* helen's css file */
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Oswald;
+    font-size: 1em;
+}
+
+/* ---a bunch of containers--- */
+.container-one-third {
+    width: 33%;
+}
+
+.container-two-third {
+    width: 66%;
+}
+
+.container-half {
+    width: 50%;
+}
+
+.container {
+    margin: 15px;
+}
+
+/* ---positions---*/
+
+.vertical-center {
+    top: 50%; 
+    transform: translate(0%, 50%);
+}
+
+.horizontal-center {
+    -ms-transform: translate(50%, 0%);
+}
+
+.fit-to-container {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* ---links and such---*/
+
+
+/* ---nav bar--- */
+
+
+
+.nav-bar {
+    overflow: hidden;       /* force the children to be contained */
+    background-color: #F29191;
+    height: 100px;
+}
+
+header {
+    display: inline-block;
+}
+
+.nav-bar img {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    float: left;
+}
+
+.nav-bar p {
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    display: inline-block;
+    color: #F2F2F2;
+    padding: 15px;
+}
+
+.nav-bar a:hover {
+    opacity: 0.75;
+    color: #BF3945;
+}
+
+.nav-bar a.selected {
+    opacity: 0.75;
+    background-color: #F2D1B3;
+    color: #BF3945;
+} 
+
+
+/* ---footer--- */
+
+footer {
+    background-color: #F29191;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    display: flex;
+    color: #F2F2F2;
+    padding: 15px;
+}
+
+footer a:hover {
+    opacity: 0.75;
+    color: #BF3945;
+}
+
+
+/* ---home--- */
+
+.home {
+    display: inline-block;
+}
