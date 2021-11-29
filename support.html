@@ -17,20 +17,25 @@
             <button class="btn btn-center btn-sm btn-outline-danger btn-default btn-red" onclick="goToTop()" id="toTopButton" title="Go to top">Top</button>
 
             <!-- Navbar -->
-            <header class="d-flex flex-wrap justify-content-center p-5 border-bottom align-items-center">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img class="bi me-2" width="112" height="97" src="img/logo.png">
-            </a>
-        
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="impact.html" class="nav-link">Impact</a></li>
-                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="support.html" class="nav-link active">Support</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
-            </ul>
-            </header>
+            <nav class="navbar navbar-expand-md d-flex flex-wrap p-5 border-bottom navbar-dark bg-white">
+                <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none navbar-brand">
+                    <img class="bi me-2" width="112" height="97" src="img/logo.png">
+                </a>
+                <button class="navbar-toggler po-bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <ul class="nav text-black nav-pills ms-auto">
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="impact.html" class="nav-link">Impact</a></li>
+                        <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link active">Support</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
+                    </ul>
+                </div>
+            </nav>
 
             <!-- Heading -->
             <div class="row no-gutters">
