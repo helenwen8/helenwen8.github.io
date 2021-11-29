@@ -127,3 +127,11 @@ iframe {
     
   }
   
+div.subheading {
+    z-index: 99;
+}
+
+/* img.subheading {
+    height: 100%;
+    overflow: hidden;
+} */
