@@ -139,3 +139,20 @@ div.subheading {
 #test {
     overflow:hidden;
 }
+
+    /* The heart of the matter */
+.testimonial-group > .row {
+overflow-x: auto;
+white-space: nowrap;
+}
+.testimonial-group > .row > .col-xs-4 {
+display: inline-block;
+float: none;
+}
+
+/* Decorations */
+.col-xs-4 { color: #fff; font-size: 100%; padding-bottom: 20px; padding-top: 18px; }
+.col-xs-4:nth-child(3n+1) { background: rgb(207, 47, 55); }
+.col-xs-4:nth-child(3n+2) { background: rgb(103, 103, 102); }
+.col-xs-4:nth-child(3n+3) { background: rgb(106, 217, 220); }
+.card-img-top{height: 100px;}
