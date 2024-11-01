@@ -23,7 +23,7 @@ In Telling Stories with Data, I wish to learn...
 # Examples
 You can keep this section for stuff from in-class demos or your other work, or remove it. 
 
-## Assignment: [Visualizing Government Debt](./govDebt/visualizing-government-debt)
+## Assignment: [Visualizing Government Debt](./govDebt/visualizing-government-debt.md)
 
 
 ## Assignment 3&4: critique-by-design
