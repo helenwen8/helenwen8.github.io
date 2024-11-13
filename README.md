@@ -22,9 +22,8 @@ In Telling Stories with Data, I wish to learn...
 
 **Assignment:** [Visualizing Government Debt](./govDebt/visualizing-government-debt.md)
 
+**Assignment 3 & 4:** [Critique by design](./NYCTemp/critique-by-design.md)
 
-<!-- ## Assignment 3&4: critique-by-design -->
-<!-- For this assignment, make sure you set up and link to a new page.  This page is linking to a new Markdown document called `critique-by-design.md`.  -->
 
 <!-- ## Final project -->
 <!-- Here it might be helpful to include a high-level description of your final project. 
