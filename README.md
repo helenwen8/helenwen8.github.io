@@ -20,7 +20,7 @@ In Telling Stories with Data, I wish to learn...
 
 # Telling Stories with Data Portfolio
 
-**Assignment:** [Visualizing Government Debt](./govDebt/visualizing-government-debt.md)
+**Assignment 1:** [Visualizing Government Debt](./govDebt/visualizing-government-debt.md)
 
 **Assignment 3 & 4:** [Critique by design](./NYCTemp/critique-by-design.md)
 
