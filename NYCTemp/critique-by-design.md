@@ -76,13 +76,13 @@ I had some difficulty showcasing the trend, and I tried to make the data look be
 After the feedback, I decided to look at the [Watch me Viz video by Andy Kriebel](https://www.youtube.com/watch?v=-dy10hFbiwA), which showcased some cool techniques:
 - You could recategorize a measure as a dimension
 - Putting the same "Date" dimension in the "column" seciton multiple times could make the x-axis subdivide more nicely, which was something I was looking for in my sketch
+- You could use a number generator to make the graph look more clustered 
 
 Additionally, both Andy and I recognized some difficulty with revisualizing this data. For example, the data set doesn't actually align with the dataset used in the visualization in the news article. The data provided does not give a good way to map out the sensors.  
 
-Here is my final redesign. This is a chart mapping out the average temperature of a specific hour, in a specific day, for all days in July, grouped by boroughs. 
+Here is my final redesign. This is a chart mapping out the average temperature of a specific hour, on a specific day, for all days in July, grouped by boroughs. Because the data set is different, I wanted to tell a different story: instead of focusing on just Bronx, I decided to focus on all boroughs on July, one of the hottest month in NYC, and also focused on the hottest hours in a day, which is afternoon between 12-5pm. 
 
 This chart also improved upon the feedback through these changes:
-- Because the data set is different, I wanted to tell a different story: instead of focusing on just Bronx, I decided to focus on all boroughs on July, one of the hottest month in NYC, and also focused on the hottest hours in a day, which is afternoon between 12-5pm. 
 - I added in more context in the title and subtitle for the viewers
 - I added an average line to show the difference between the boroughs
 - I made sure the filter option is not selectable so the user would not get confused by the data
