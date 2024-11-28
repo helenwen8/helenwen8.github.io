@@ -22,41 +22,29 @@ Luckily, as we are in college, lots of people do drink coffee just to survive. I
 | Ensuring my stories make sense and achieve my goals | What did you learn from this presentation? |
 |                                                     | What would you have hoped to see? |    
 | Ensuring my visualization are clear despite the huge amount of data | What did you think of the visualization? |
-|                                                                     | Were you able to read the axis properly? |
 |                                                                     | What did you learn from these visualizations? |
-| Ensuring my story is compelling.                    | Are you interested in trying out more coffee? |
-|                                                     | What is your next step? |
+| Ensuring my story is compelling.                    | What is your next step? |
 
 
 ## Interview findings
-> Detail the findings from your interviews.  Do not include PII.  Capture specific insights where possible.
 
 
-| Questions               | Interview 1 (F, 22yrs, student) | Interview 2 (F, 21yrs, student) | Interview 3 |
+| Questions               | Interview 1 (F, 22yrs, student) | Interview 2 (F, 20yrs, student) | Interview 3 (F, 21yrs, student) |
 |-------------------------|--------------------------------|-------------|-------------|
-| What would you have hoped to see? |    
-| What did you think of the visualization? |
-| Were you able to read the axis properly? |
-| What did you learn from these visualizations? |
-| Are you interested in trying out more coffee? |
-| What is your next step? |      |             |             |
-
-
+| What did you learn? | They weren't sure what the names on some coffee bean bag is, and now they understand they are the subspecies name | Realizing that they didn't liked a coffee becase they are more acidic made them understand their taste profile more | They learned that coffee has a lot more science behind them.
+| What would you have hoped to see? | The most popular line of coffee would be cool | Guide on what beans to choose, what kind of coffee type to choose | More about coffee in general, not just coffee bean
+| What did you think of the visualization? | Lack of legends are confusing; some graphs are dense | Lack of legends are confusing | Should include alt text because they care about accessibility
+| What did you learn from these visualizations? | Learned about different varieties that they saw in coffee shop | Dislikes acidic coffee, so woul avoid the ones mentioned on my website and try the less acidic ones | Realized coffee is a lot more than just frappuccino drink
+| What is your next step? | Trying out coffee with more cup points      | Research on what coffee is more aromatic | Research on coffee bean that is recommended from this article|
 
 
 # Identified changes for Part III
-> Document the changes you plan on implementing next week to address any issues identified.  
-
-Text here!
 
 | Research synthesis                       | Anticipated changes for Part III                                                |
 |------------------------------------------|---------------------------------------------------------------------------------|
-| Findings or observations from interviews | Describe what, if any changes you anticipate making to address the observation. |
-|                                          |                                                                                 |
-|                                          |                                                                                 |
-|                                          |                                                                                 |
-| ...add more rows as necessary            |                                                                                 |
+| Visualization without legends are very confusing | Implement actual embedded graph onto the page|
+| People cared a lot more about acidity and other things than I expected | Implement perhaps more attributes about the coffee so people could learn more |
+| Accessibility is important | Implement visualization with better axis and readability, with alt text support |
+| Knowledge might be too niche for people that just started with coffee | Either tailor my story towards more experienced coffee drinker, or make the content more beginner friendly |
 
-> ...include any final thoughts you have here. 
-
-Text here
+Overall, I was happy that people cared about this content more than I thought, even with people that doesn't drink coffee as seriously. I realized that they would care about the attributes of each coffee and would research upon them. Because of this, I want to implement these research. I would also work on making my stories more polished so they are ready for a bigger audience.

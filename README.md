@@ -32,5 +32,5 @@ In Telling Stories with Data, I wish to learn...
 [Part I](./finalProject/part1.md)
 
 [Part II](./finalProject/part2.md)
-<!--[Part II](final-project-part-two)
-Part III(final-project-part-three)-->
+
+<!--Part III(final-project-part-three)-->
