@@ -26,11 +26,10 @@ In Telling Stories with Data, I wish to learn...
 
 
 <!-- ## Final project -->
-<!-- Here it might be helpful to include a high-level description of your final project.  -->
 **Final Project:** 
 
 [Part I](./finalProject/part1.md)
 
 [Part II](./finalProject/part2.md)
 
-<!--Part III(final-project-part-three)-->
+[Part III](./finalProject/part3.md)
