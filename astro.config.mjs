@@ -20,6 +20,8 @@ export default defineConfig({
   build: {
     outDir: './', // Output directly to the root of the repository
   },
+
+  site: 'https://helenwen8.github.io'
 });
 
 
