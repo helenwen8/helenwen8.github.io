@@ -1,35 +1,47 @@
-# Portfolio
-This is my public portfolio for Telling Stories with Data at CMU!  
+# Astro Starter Kit: Minimal
 
-In the future, I want to make an actual online portfolio, but I don't know where I would build it. 
+```sh
+npm create astro@latest -- --template minimal
+```
 
-# About me
-My name is Helen (she/her/hers). I am a CMU Heinz MISM (Master in Information Systems Management) student, looking to graduate in Summer 2025!
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-My passion lies in using both my technical and soft skills to make an impact in the world. I am experienced in software development, as well as technology consulting. 
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-In my off time, I enjoy dancing. I lead and participate multiple K-Pop dance projects, as well as dance crews in CMU. 
+## 🚀 Project Structure
 
+Inside of your Astro project, you'll see the following folders and files:
 
-# What I hope to learn
-In Telling Stories with Data, I wish to learn... 
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-- How to effectively create visuals that are appropriate
-- Different ways to visualize data, besides the most common histogram, line graph, etc.
-- Many more things! Maybe I will actually create my online portfolio to aid my job search...
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-# Telling Stories with Data Portfolio
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-**Assignment 1:** [Visualizing Government Debt](./govDebt/visualizing-government-debt.md)
+Any static assets, like images, can be placed in the `public/` directory.
 
-**Assignment 3 & 4:** [Critique by design](./NYCTemp/critique-by-design.md)
+## 🧞 Commands
 
+All commands are run from the root of the project, from a terminal:
 
-<!-- ## Final project -->
-**Final Project:** 
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-[Part I](./finalProject/part1.md)
+## 👀 Want to learn more?
 
-[Part II](./finalProject/part2.md)
-
-[Part III](./finalProject/part3.md)
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
