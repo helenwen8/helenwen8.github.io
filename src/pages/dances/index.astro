@@ -1,0 +1,18 @@
+---
+import BaseLayout from '@src/layouts/BaseLayout.astro';
+import ProjectList from '@src/layouts/components/ProjectList.astro';
+import { dances } from './dances';
+---
+
+<BaseLayout
+	title="Helen's Dance Projects"
+	description=""
+>
+  <div class='container'>
+    <div class="mb-10">
+      <h1 class="text-3xl font-bold mb-2">Dance videos, covers, choreography, and more</h1>
+      <p class="text-zinc-700 dark:text-zinc-300 text-lg"></p>
+    </div>
+    <ProjectList dances={dances}/>
+  </div>
+</BaseLayout>
