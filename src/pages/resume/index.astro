@@ -1,0 +1,163 @@
+---
+import BaseLayout from '@src/layouts/BaseLayout.astro';
+
+import Section from '@src/components/Section.astro';
+import ExperienceItem from '@src/components/ExperienceItem.astro';
+import EducationItem from '@src/components/EducationItem.astro';
+---
+
+<BaseLayout
+	title="Helen's Resume!"
+	description="trying..."
+>
+
+<div class='container grid grid-cols-12 gap-4 w-full'>
+
+
+<!-- <Layout title="My CV"> -->
+    <!-- <div class="text-center mb-8">
+        <h1 class="text-4xl font-bold text-gray-900">Your Name</h1>
+        <p class="text-xl text-gray-700">Your Role/Title</p>
+        <p class="text-gray-600">City, Country</p>
+        <p class="text-gray-600">
+            <a href="mailto:your.email@example.com" class="hover:text-blue-600 transition duration-300">your.email@example.com</a>
+        </p>
+        <p class="text-gray-600">
+            <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition duration-300">yourwebsite.com</a>
+        </p>
+    </div> -->
+
+    <!-- <Section title="Summary">
+        <p class="text-gray-800">
+            A brief overview of your skills, experience, and career goals.  Highlight what makes you a great candidate.
+        </p>
+    </Section> -->
+
+    <div class="md:col-span-3">
+        <Section title="Skills">
+            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"> -->
+                <!-- {skills.map((skill) => (
+                    <div class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-md font-medium">{skill}</div>
+                ))} -->
+            <!-- </div> -->
+        </Section>
+    </div>
+    
+
+    <div class="md:col-span-9 justify-end">
+        <Section title="Education">
+            <EducationItem
+                institution="Carnegie Mellon University"
+                degree="Bachelor of Science in Information Systems"
+                dates="2019 - 2024"
+                description="Honors"
+            />
+            <EducationItem
+                institution="Carnegie Mellon University"
+                degree="Masters of Information Systems Management"
+                dates="2024 - 2025"
+            />
+        </Section>
+
+        <Section title="Experience">
+            <ExperienceItem
+                title="Cloud & Digital Strategy Intern"
+                location="New York, NY, USA",
+                company="PricewaterhouseCoopers (PwC)"
+                dates="June 2023 - August 2023"
+                description={[
+                    "made slides",
+                    "competed and won first place lol"
+                ]}
+                technologies={["React", "Node.js", "Tailwind CSS"]}
+            />
+            <ExperienceItem
+                title="Research Assistant"
+                company="Carnegie Mellon University, Heinz College"
+                location='Pittsburgh, PA, USA'
+                dates="May 2022 - August 2022"
+                description={[
+                    "Good morning baltimore",
+                    "Every day is like an open door",
+                ]}
+                technologies={["JavaScript", "SQL", "HTML", "CSS"]}
+            />
+        </Section>
+    </div>
+    
+
+
+    <!--
+
+    <Section title="Languages">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {languages.map((language) => (
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-700 font-medium">{language.lang}</span>
+                    <span class="text-gray-800">{language.level}</span>
+                </div>
+            ))}
+        </div>
+    </Section>
+
+    <Section title="Projects">
+        <ExperienceItem
+            title="Project 1"
+            company="Personal Project"
+            dates="2023"
+            description={[
+                "Project description and features.",
+                "Key technologies used.",
+                "Link to the project (if applicable).",
+            ]}
+            technologies={["Astro", "Tailwind CSS", "JavaScript"]}
+        />
+    </Section> -->
+<!-- </Layout> -->
+</div>
+</BaseLayout>
+
+<!-- 
+---
+// components/EducationItem.astro
+interface Props{
+    institution: string;
+    degree: string;
+    dates: string;
+    description?: string;
+}
+
+const { institution, degree, dates, description } = Astro.props;
+---
+
+<div class="mb-6">
+    <h3 class="text-xl font-semibold text-gray-700">{degree}</h3>
+    <p class="text-gray-600 text-sm">{institution} - {dates}</p>
+    {description && <p class="text-gray-800 my-2">{description}</p>}
+</div>
+```astro -->
+<!-- ---
+// pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import ExperienceItem from '../components/ExperienceItem.astro';
+import EducationItem from '../components/EducationItem.astro';
+
+const skills = [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Astro",
+    "Tailwind CSS",
+    "Node.js",
+    "SQL",
+    "Git",
+    "Problem Solving",
+    "Communication",
+];
+
+const languages = [
+    {lang: "English", level: "Native"},
+    {lang: "Spanish", level: "Conversational"},
+];
+--- -->

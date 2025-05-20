@@ -3,12 +3,13 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 import partytown from "@astrojs/partytown";
+import react from '@astrojs/react';
 // import { autoNewTabExternalLinks } from './src/autoNewTabExternalLinks';
 
 // https://astro.build/config
 export default defineConfig({
   output: 'static', // Ensure static output
-  integrations: [mdx(), sitemap(), tailwind(), partytown()],
+  integrations: [mdx(), sitemap(), tailwind(), partytown(), react()],
   base: '/', // Set the base path to the root
   markdown: {
     extendDefaultPlugins: true
