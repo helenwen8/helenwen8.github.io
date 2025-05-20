@@ -4,6 +4,23 @@ import BaseLayout from '@src/layouts/BaseLayout.astro';
 import Section from '@src/components/Section.astro';
 import ExperienceItem from '@src/components/ExperienceItem.astro';
 import EducationItem from '@src/components/EducationItem.astro';
+
+const skills = [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Astro",
+    "Tailwind CSS",
+    "Node.js",
+    "SQL",
+    "Git",
+];
+
+const languages = [
+    {lang: "Mandarin Chinese", level: "Native"},
+    {lang: "English", level: "Fluent"},
+    {lang: "Japanese", level: "Intermediate"},
+];
 ---
 
 <BaseLayout
@@ -34,13 +51,36 @@ import EducationItem from '@src/components/EducationItem.astro';
     </Section> -->
 
     <div class="md:col-span-3">
-        <Section title="Skills">
-            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"> -->
-                <!-- {skills.map((skill) => (
-                    <div class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-md font-medium">{skill}</div>
-                ))} -->
-            <!-- </div> -->
+        <Section title="About Me">
+            <p>
+                I love food
+            </p>
         </Section>
+        <Section title="Skills">
+            <div> 
+                <ul>
+                    {skills.map((skill) => (
+                        <li>{skill}</li>
+                    ))}
+                </ul>
+            </div>
+        </Section>
+        <Section title="Languages">
+            <ul>
+                {languages.map((language) => (
+                    <li>{language.lang} ({language.level})</li>
+                ))}
+            </ul>
+        </Section>
+        
+        <Section title="Contact">
+            <p>
+                <a href="mailto:zhuowen_huang@outlook.com" class="hover:text-blue-600 transition duration-300"> 
+                    zhuowen_huang@outlook.com</a>
+            </p>
+        </Section>
+
+        
     </div>
     
 
@@ -116,48 +156,3 @@ import EducationItem from '@src/components/EducationItem.astro';
 <!-- </Layout> -->
 </div>
 </BaseLayout>
-
-<!-- 
----
-// components/EducationItem.astro
-interface Props{
-    institution: string;
-    degree: string;
-    dates: string;
-    description?: string;
-}
-
-const { institution, degree, dates, description } = Astro.props;
----
-
-<div class="mb-6">
-    <h3 class="text-xl font-semibold text-gray-700">{degree}</h3>
-    <p class="text-gray-600 text-sm">{institution} - {dates}</p>
-    {description && <p class="text-gray-800 my-2">{description}</p>}
-</div>
-```astro -->
-<!-- ---
-// pages/index.astro
-import Layout from '../layouts/Layout.astro';
-import Section from '../components/Section.astro';
-import ExperienceItem from '../components/ExperienceItem.astro';
-import EducationItem from '../components/EducationItem.astro';
-
-const skills = [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Astro",
-    "Tailwind CSS",
-    "Node.js",
-    "SQL",
-    "Git",
-    "Problem Solving",
-    "Communication",
-];
-
-const languages = [
-    {lang: "English", level: "Native"},
-    {lang: "Spanish", level: "Conversational"},
-];
---- -->

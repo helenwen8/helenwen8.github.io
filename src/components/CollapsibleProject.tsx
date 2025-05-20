@@ -1,17 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 interface Props {
-  title: string;
-  company: string;
+  projectName: string;
+  role: string;
   location: string;
   dates: string;
   description: string[];
   skills?: string[];
 }
 
-const CollapsibleExp: React.FC<Props> = ({
-  title,
-  company,
+const CollapsibleProject: React.FC<Props> = ({
+  projectName,
+  role,
   location,
   dates,
   description,
@@ -32,18 +32,18 @@ const CollapsibleExp: React.FC<Props> = ({
         <div className="flex justify-between cursor-pointer" onClick={() => setIsCollapsed(!isCollapsed)}>
             <h3 className="text-xl font-semibold text-gray-700">
                 <span>{isCollapsed ? '▶' : '▼'} </span>
-                {title}
+                {projectName}
             </h3>
             <h3 className="end text-l font-semibold text-gray-700">{dates}</h3>
         </div>
 
         <div
             ref={contentRef}
-            className="transition-all overflow-hidden duration-300 ease-in-out"
+            className="transition-all overflow-hidden duration-300"
             style={{ maxHeight: isCollapsed ? '0' : undefined }}
         >
             <div className="flex justify-between">
-                <span className="text-gray-700 font-semibold">{company}</span>
+                <span className="text-gray-700 font-semibold">{role}</span>
                 <span className="end text-gray-600 text-sm">{location}</span>
             </div>
             
@@ -70,4 +70,4 @@ const CollapsibleExp: React.FC<Props> = ({
     );
 }
 
-export default CollapsibleExp;
+export default CollapsibleProject;
