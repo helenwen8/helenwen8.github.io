@@ -4,17 +4,16 @@ export interface Dance {
   danceName: string,
   artistName?: string,
   thumbnail?: string,
-  videoLink: string;
+  videoID: string;
   tags?: string[],
   date?: string,
-  // [key: string]: any;
 }
 
 export const dances: Dance[] = [
   {
     danceName: 'HOME;RUN',
     artistName: 'SEVENTEEN',
-    videoLink: 'https://youtu.be/bMpEBz2DdgM?si=81XWwlWNQmMa8D7J',
+    videoID: 'bMpEBz2DdgM',
     tags: ["K-Pop", "Dance Cover", "Leader"],
   },
   // {
