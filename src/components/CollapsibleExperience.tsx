@@ -1,15 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
+import type { ExperienceProps } from '@src/pages/resume/resume';
 
-interface Props {
-  title: string;
-  company: string;
-  location: string;
-  dates: string;
-  description: string[];
-  skills?: string[];
-}
 
-const CollapsibleExp: React.FC<Props> = ({
+const CollapsibleExperience: React.FC<ExperienceProps> = ({
   title,
   company,
   location,
@@ -70,4 +63,4 @@ const CollapsibleExp: React.FC<Props> = ({
     );
 }
 
-export default CollapsibleExp;
+export default CollapsibleExperience;

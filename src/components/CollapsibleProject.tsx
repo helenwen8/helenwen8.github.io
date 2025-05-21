@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-interface Props {
+interface ExperienceProps {
   projectName: string;
   dates: string;
   role: string;
@@ -8,7 +8,7 @@ interface Props {
   skills?: string[];
 }
 
-const CollapsibleProject: React.FC<Props> = ({
+const CollapsibleProject: React.FC<ExperienceProps> = ({
   projectName,
   dates,
   role,

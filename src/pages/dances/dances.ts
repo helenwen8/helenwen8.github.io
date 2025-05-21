@@ -4,18 +4,19 @@ export interface Dance {
   danceName: string,
   artistName?: string,
   thumbnail?: string,
-  videoID: string;
+  videoLink: string;
   tags?: string[],
   date?: string,
+  // [key: string]: any;
 }
 
 export const dances: Dance[] = [
   {
     danceName: 'HOME;RUN',
     artistName: 'SEVENTEEN',
-    videoID: 'bMpEBz2DdgM',
+    videoLink: 'https://youtu.be/bMpEBz2DdgM?si=81XWwlWNQmMa8D7J',
     tags: ["K-Pop", "Dance Cover", "Leader"],
-  }
+  },
   // {
   //   ...(await getRepositoryDetails('devaradise/paradise-ui')),
   //   name: 'Paradise UI',
