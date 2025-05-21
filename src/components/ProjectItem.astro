@@ -1,0 +1,13 @@
+---
+import CollapsibleProj from './CollapsibleProject.tsx';
+const { projectName, role, dates, description, skills } = Astro.props;
+---
+
+<CollapsibleProj
+  client:load
+  projectName={projectName}
+  role={role}
+  dates={dates}
+  description={description}
+  skills={skills}
+/>

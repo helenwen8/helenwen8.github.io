@@ -1,19 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 interface Props {
-  title: string;
-  company: string;
-  location: string;
+  projectName: string;
   dates: string;
+  role: string;
   description: string[];
   skills?: string[];
 }
 
-const CollapsibleExp: React.FC<Props> = ({
-  title,
-  company,
-  location,
+const CollapsibleProject: React.FC<Props> = ({
+  projectName,
   dates,
+  role,
   description,
   skills,
 }) => {
@@ -32,7 +30,7 @@ const CollapsibleExp: React.FC<Props> = ({
         <div className="flex justify-between cursor-pointer" onClick={() => setIsCollapsed(!isCollapsed)}>
             <h3 className="text-xl font-semibold">
                 <span>{isCollapsed ? '▶' : '▼'} </span>
-                {title}
+                {projectName}
             </h3>
             <h3 className="end text-l font-semibold">{dates}</h3>
         </div>
@@ -42,9 +40,7 @@ const CollapsibleExp: React.FC<Props> = ({
             className="overflow-hidden duration-300 ease-in-out"
             style={{ maxHeight: isCollapsed ? '0' : undefined }}
         >
-            <div className="flex justify-between">
-                <span className="font-semibold">{company}</span>
-                <span className="end text-sm">{location}</span>
+                <span className="font-semibold">{role}</span>
             </div>
             
             <ul className="list-disc list-inside my-2">
@@ -66,8 +62,7 @@ const CollapsibleExp: React.FC<Props> = ({
                 </div>
             )}
         </div>
-        </div>
     );
 }
 
-export default CollapsibleExp;
+export default CollapsibleProject;

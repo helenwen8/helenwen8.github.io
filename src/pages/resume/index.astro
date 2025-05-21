@@ -4,6 +4,7 @@ import BaseLayout from '@src/layouts/BaseLayout.astro';
 import Section from '@src/components/Section.astro';
 import ExperienceItem from '@src/components/ExperienceItem.astro';
 import EducationItem from '@src/components/EducationItem.astro';
+import ProjectItem from '@src/components/ProjectItem.astro';
 
 import Prose from '@src/components/Prose.astro';
 
@@ -31,7 +32,6 @@ const languages = [
 >
 
 <div class='container grid grid-cols-12 gap-4 w-full'>
-
 
 <!-- <Layout title="My CV"> -->
     <!-- <div class="text-center mb-8">
@@ -77,7 +77,7 @@ const languages = [
         
         <Section title="Contact">
             <p>
-                <a href="mailto:zhuowen_huang@outlook.com" class="hover:text-blue-600 transition duration-300"> 
+                <a href="mailto:zhuowen_huang@outlook.com" class="hover:text-blue-600"> 
                     zhuowen_huang@outlook.com</a>
             </p>
         </Section>
@@ -123,22 +123,25 @@ const languages = [
                 ]}
             />
         </Section>
+
+        <Section title="Projects">
+            <ProjectItem
+                projectName="Cloud & Digital Strategy Intern"
+                role="PricewaterhouseCoopers (PwC)"
+                dates="June 2023 - August 2023"
+                description={[
+                    "made slides",
+                    "competed and won first place lol"
+                ]}
+            />
+ 
+        </Section>
     </div>
     
 
 
     <!--
 
-    <Section title="Languages">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {languages.map((language) => (
-                <div class="flex justify-between items-center">
-                    <span class="text-gray-700 font-medium">{language.lang}</span>
-                    <span class="text-gray-800">{language.level}</span>
-                </div>
-            ))}
-        </div>
-    </Section>
 
     <Section title="Projects">
         <ExperienceItem
