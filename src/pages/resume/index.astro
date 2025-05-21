@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '@src/layouts/BaseLayout.astro';
 
-import Section from '@src/components/Section.astro';
-import Experience from "@src/components/ExperienceItem.astro";
+import Section from '@src/s/Section.astro';
 import EducationItem from '@src/components/EducationItem.astro';
-import ProjectItem from '@src/components/ProjectItem.astro';
+import Experience from "@src/components/ExperienceItem.astro";
+import Project from '@src/components/ProjectItem.astro';
 
 import Prose from '@src/components/Prose.astro';
 
@@ -102,31 +102,9 @@ const languages = [
         </Section>
 
         <Experience></Experience>
-        
-<!-- 
-        <Section title="Experience">
-            <ExperienceItem
-                title="Cloud & Digital Strategy Intern"
-                location="New York, NY, USA",
-                company="PricewaterhouseCoopers (PwC)"
-                dates="June 2023 - August 2023"
-                description={[
-                    "made slides",
-                    "competed and won first place lol"
-                ]}
-            />
-            <ExperienceItem
-                title="Research Assistant"
-                company="Carnegie Mellon University, Heinz College"
-                location='Pittsburgh, PA, USA'
-                dates="May 2022 - August 2022"
-                description={[
-                    "Good morning baltimore",
-                    "Every day is like an open door",
-                ]}
-            />
-        </Section> -->
 
+        <Project></Project>
+<!-- 
         <Section title="Projects">
             <ProjectItem
                 projectName="Cloud & Digital Strategy Intern"
@@ -138,7 +116,7 @@ const languages = [
                 ]}
             />
  
-        </Section>
+        </Section> -->
     </div>
     
 

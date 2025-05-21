@@ -1,13 +1,13 @@
 ---
 import CollapsibleProj from './CollapsibleProject.tsx';
-const { projectName, role, dates, description, skills } = Astro.props;
+import { projects } from "@src/pages/resume/resume.ts"; 
+import Section from './Section.astro';
 ---
 
-<CollapsibleProj
-  client:load
-  projectName={projectName}
-  role={role}
-  dates={dates}
-  description={description}
-  skills={skills}
-/>
+<Section title="Projects">
+  {projects.map((proj) => (
+    <CollapsibleProj
+      client:load
+      {...proj} />
+  ))}
+</Section>

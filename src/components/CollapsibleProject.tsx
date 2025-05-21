@@ -1,14 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
+import type { ProjectProps } from '@src/pages/resume/resume';
 
-interface ExperienceProps {
-  projectName: string;
-  dates: string;
-  role: string;
-  description: string[];
-  skills?: string[];
-}
 
-const CollapsibleProject: React.FC<ExperienceProps> = ({
+const CollapsibleProject: React.FC<ProjectProps> = ({
   projectName,
   dates,
   role,

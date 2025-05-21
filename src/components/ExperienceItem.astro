@@ -2,19 +2,7 @@
 import CollapsibleExperience from './CollapsibleExperience.tsx';
 import { experiences } from "@src/pages/resume/resume.ts"; // Import your data
 import Section from './Section.astro';
-
-// const { title, company, location, dates, description, skills } = ExperienceProps;
 ---
-
-<!-- <CollapsibleExp 
-  client:load
-  title={title}
-  company={company}
-  location={location}
-  dates={dates}
-  description={description}
-  skills={skills}
-/> -->
 
 <Section title="Experience">
   {experiences.map((exp) => (

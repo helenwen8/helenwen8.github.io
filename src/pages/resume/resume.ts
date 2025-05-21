@@ -9,16 +9,15 @@ export interface ExperienceProps {
   skills?: string[];
 }
 
-export interface Experience {
-    danceName: string,
-    artistName?: string,
-    thumbnail?: string,
-    videoID: string;
-    tags?: string[],
-    date?: string,
+export interface ProjectProps {
+  projectName: string;
+  dates: string;
+  role: string;
+  description: string[];
+  skills?: string[];
 }
 
-
+// data!
 export const experiences: ExperienceProps[] =  [
     {
         title: "Cloud & Digital Strategy Intern",
@@ -38,6 +37,17 @@ export const experiences: ExperienceProps[] =  [
         description: [
                     "Good morning baltimore",
                     "Every day is like an open door",
+        ]
+    }
+]
+
+export const projects: ProjectProps[] = [
+    {
+        projectName: "Shelly, a personal CRM",
+        role: "Team Manager, Backend Developer",
+        dates: "September 2023 - December 2023",
+        description: [
+            "Cried over core data",
         ]
     }
 ]
