@@ -35,9 +35,7 @@ const CollapsibleProject: React.FC<ProjectProps> = ({
             style={{ maxHeight: isCollapsed ? '0' : undefined }}
         >
                 <span className="font-semibold">{role}</span>
-            </div>
-            
-            <ul className="list-disc list-inside my-2">
+                <ul className="list-disc list-inside my-2">
                 {description.map((item, idx) => (
                     <li key={idx} className="">{item}</li>
                 ))}
@@ -55,6 +53,9 @@ const CollapsibleProject: React.FC<ProjectProps> = ({
                     </div>
                 </div>
             )}
+            </div>
+            
+            
         </div>
     );
 }

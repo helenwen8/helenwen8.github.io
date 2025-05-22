@@ -1,16 +1,43 @@
 ---
-interface Props{
-    institution: string;
-    degree: string;
-    dates: string;
-    description?: string;
-}
+// interface Props{
+//     institution: string;
+//     degree: string;
+//     dates: string;
+//     description?: string;
+// }
 
-const { institution, degree, dates, description } = Astro.props;
+// const { institution, degree, dates, description } = Astro.props;
+const courseworks = [
+    "Computer Systems",
+    "Distributed Systems",
+    "Computer Security",
+    "Mobile App Design & Development", 
+    "Design Human Centered Software",
+    "Practical Data Science",
+    "Database Design",
+    "Project Management",
+    "Managing Disruptive Technologies",
+]
+
 ---
 
 <div class="mb-6">
-    <h3 class="text-xl font-semibold">{degree}</h3>
-    <p class="text-sm">{institution} - {dates}</p>
-    {description && <p class="my-2">{description}</p>}
+    <div class="flex justify-between">
+        <h3 class="text-xl font-semibold">Carnegie Mellon University</h3>
+        <span class="end text-sm">Pittsburgh, PA, USA</span>
+    </div>
+    <div class="flex justify-between">
+        <span class="font">Masters of Information Systems Management</span>
+        <span class="end text-sm">2024 - 2025</span>
+    </div>
+    <div class="flex justify-between">
+        <span class="font">B.S. Information Systems, Minor in Computer Science</span>
+        <span class="end text-sm">2019 - 2024</span>
+    </div>
+    {courseworks.map((course) => (
+        <span>{course}, </span>)
+    )}
+    
+    <!-- <p class="text-sm">B.S. Information Systems - 2019 - 2024</p>
+    <p class="my-2"></p> -->
 </div>

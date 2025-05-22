@@ -15,13 +15,7 @@ export const dances: Dance[] = [
     artistName: 'SEVENTEEN',
     videoID: 'bMpEBz2DdgM',
     tags: ["K-Pop", "Dance Cover", "Leader"],
+    date: "Spring 25",
   }
-  // {
-  //   ...(await getRepositoryDetails('devaradise/paradise-ui')),
-  //   name: 'Paradise UI',
-  //   demoLink: 'https://paradise-ui.com',
-  //   postLink: 'https://devaradise.com/how-i-build-paradise-ui-react-component-library/',
-  //   tags: ['React', 'UI Library']
-  // }
 
 ]
