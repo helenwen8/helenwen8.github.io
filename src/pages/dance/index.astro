@@ -2,6 +2,7 @@
 import BaseLayout from '@src/layouts/BaseLayout.astro';
 import ProjectList from '@src/layouts/ProjectList.astro';
 import { dances } from './dances';
+import DanceListFilter from '@src/components/DanceListFilter';
 ---
 
 <BaseLayout
@@ -14,5 +15,8 @@ import { dances } from './dances';
       <p class="text-zinc-700 dark:text-zinc-300 text-lg"></p>
     </div>
     <ProjectList dances={dances}/>
+    <DanceListFilter 
+      client:load
+      dances={dances} />
   </div>
 </BaseLayout>
