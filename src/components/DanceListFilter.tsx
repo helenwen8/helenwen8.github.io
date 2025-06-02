@@ -7,12 +7,15 @@ interface DanceListFilterProps {
   dances: Dance[]; // The full list of dance data
 }
 
+
+
 /* Consolidated Genres and Content Types for filteringn */
 const allGenres = Object.values(Genre);
 const allContentTypes = Object.values(ContentType);
 
 /* Filtering Logic */
 const DanceListFilter: React.FC<DanceListFilterProps> = ({ dances }) => {
+  
   // Filter for genres
   const [isGenrePanelOpen, setIsGenrePanelOpen] = useState(false);
   const [selectedGenres, setSelectedGenres] = useState<string[]>(allGenres);

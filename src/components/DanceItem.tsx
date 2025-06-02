@@ -38,14 +38,15 @@ const DanceItem: React.FC<DanceItemProps> = ({
                         text-sm text-zinc-700 dark:text-zinc-300 no-underline px-2 py-0.5'>
                     {dance.leaderType}
                 </span>
-                <span key={dance.con}
+                <span key={dance.contentType}
                     className='border border-zinc-300 dark:border-zinc-700 rounded-2xl
                         text-sm text-zinc-700 dark:text-zinc-300 no-underline px-2 py-0.5'>
                     {dance.contentType}
                 </span>
 
-                {(dance.tags || [])?.map((tag: string) => (
-                    <span
+                {(dance.tags || [])?.filter((tag: string) => tag.trim() !== '') // Filter out empty tags
+                .map((tag: string) => (
+                   <span
                     key={tag} // React requires a key for list items
                     className='border border-zinc-300 dark:border-zinc-700 rounded-2xl
                         text-sm text-zinc-700 dark:text-zinc-300 no-underline px-2 py-0.5'>
