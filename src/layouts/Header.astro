@@ -122,11 +122,11 @@ const menu = [
 
 	<script is:inline>
 		const theme = (() => {
-			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				return 'dark';
-			}
 			if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 				return localStorage.getItem('theme');
+			}
+			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				return 'dark';
 			}
 			return 'light';
 		})();
@@ -139,12 +139,12 @@ const menu = [
 
 		window.localStorage.setItem('theme', theme || '');
 
-		function sendMessage(message) {
-			const iframe = document.querySelector('iframe.giscus-frame');
-			if (!iframe) return;
-			console.log('Theme toggled to:', isDark ? 'dark' : 'light');
-			iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-		}
+		// function sendMessage(message) {
+		// 	const iframe = document.querySelector('iframe.giscus-frame');
+		// 	if (!iframe) return;
+		// 	console.log('Theme toggled to:', isDark ? 'dark' : 'light');
+		// 	iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+		// }
 
 		const handleToggleClick = () => {
 			const element = document.documentElement;
@@ -152,21 +152,25 @@ const menu = [
 
 			const isDark = element.classList.contains('dark');
 			if (isDark) {
-				sendMessage({
-					setConfig: {
-						theme: 'dark_dimmed'
-					}
-				});
+				localStorage.setItem('theme', 'dark');
+				console.log('Theme toggled to: dark');
+				// sendMessage({
+				// 	setConfig: {
+				// 		theme: 'dark_dimmed'
+				// 	}
+				// });
 			} else {
-				sendMessage({
-					setConfig: {
-						theme: 'light'
-					}
-				});
+				localStorage.setItem('theme', 'light');
+				console.log('Theme toggled to: light');
+				// sendMessage({
+				// 	setConfig: {
+				// 		theme: 'light'
+				// 	}
+				// });
 			}
 			localStorage.setItem('theme', isDark ? 'dark' : 'light');
-			
 		};
+
 		document.getElementById('themeToggle')?.addEventListener('click', handleToggleClick);
 	</script>
 </header>
