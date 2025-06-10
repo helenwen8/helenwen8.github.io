@@ -166,7 +166,7 @@ const DanceListFilter: React.FC<DanceListFilterProps> = ({ dances }) => {
       <div className="relative mb-4">
         <button
           ref={genreButtonRef}
-          className="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800"
+          className="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 button-colors"
           onClick={() => setIsGenrePanelOpen(!isGenrePanelOpen)}
         >
           Filter by Genre {isGenrePanelOpen ? '▲' : '▼'}
@@ -217,7 +217,7 @@ const DanceListFilter: React.FC<DanceListFilterProps> = ({ dances }) => {
         <div className="relative mb-4">
         <button
           ref={contentTypeButtonRef}
-          className="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800"
+          className="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 button-colors"
           onClick={() => setIsContentTypePanelOpen(!isContentTypePanelOpen)}
         >
           Filter by Content Type {isContentTypePanelOpen ? '▲' : '▼'}

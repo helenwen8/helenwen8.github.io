@@ -1,6 +1,6 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Hi';
-export const SITE_TAGLINE = 'Hi'; // site tagline
-export const SITE_DESCRIPTION = 'Hi'; // site meta description for SEO
+export const SITE_TITLE = 'Helen Huang';
+export const SITE_TAGLINE = 'luv ♡'; // site tagline
+export const SITE_DESCRIPTION = "Helen's personal website!"; // site meta description for SEO

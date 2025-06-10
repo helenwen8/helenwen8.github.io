@@ -17,41 +17,54 @@ import Prose from '../components/Prose.astro';
 ---
 
 <BaseLayout title={SITE_TITLE + ' - ' + SITE_TAGLINE} description={SITE_DESCRIPTION}>
-	<div class='container'>
-		<div class='w-full md:flex md:items-center gap-16 mb-10'>
-      <div class="text-pretty leading-9">
-        <h1 class="text-4xl font-bold mb-4">Hello! I am Helen </h1>
-        <Prose>
-          <div class="text-lg">
-            <p>I am a new grad from Carnegie Mellon University.</p>  
-            <p>I have some projects I want to show off, and I love dancing. Feel free to explore around!</p>  
-          </div>
-        </Prose>
-      </div>
-      <Image src={me} alt="" width={300} loading="eager" class="rounded-3xl mx-4 md:mx-0"/>
-		</div>
-		<!--  <main>
-      <div class='mt-6 mb-12'>
-        <div class="flex justify-between gap-2 border-b mb-1 dark:border-b-zinc-700">
-          <h2 class="text-lg font-bold mb-3">Recent Posts</h2>
-           <a href="/posts/" class="inline-block py-2 underline dark:prose-invert">All posts &raquo;</a> -->
+  <div class='container grid-container items-center gap-8'>
+    
+
+    <div class="text-pretty col-span-full md:col-span-8">
+      <h1 class="text-4xl font-bold mb-8">Hello! My name is Helen</h1>
+      <Prose>
+        <div class="text-lg">
+          <p>I am a new grad from Carnegie Mellon University, studied Information Systems (+Management) and Computer Science.</p>  
+          <p>I have some projects I want to show off. I love dancing. Feel free to explore around!</p>  
         </div>
-        <div>
-          <!-- {
-            posts.map((post: BlogPost) => (
-              <PostItem post={post} />
-            ))
-          }       
-        </div>
-        <div class="text-right">
-        </div>
+      </Prose>
+    </div>
+
+    <div class="justify-self-center w-80 relative col-span-full md:col-span-4 order-first md:order-last">     
+      <Image src={me} alt="Helen" class="rounded-xl relative z-10"/>
+      
+      <!-- decorative block -->
+      <divs
+        class="absolute inset-0 bg-rose-300 z-0 rounded-xl transform translate-x-3 translate-y-3"
+        aria-hidden="true"> </div>
+
+  </div>
+
+</div>
+
+
+  </div>
+  <!--  <main>
+    <div class='mt-6 mb-12'>
+      <div class="flex justify-between gap-2 border-b mb-1 dark:border-b-zinc-700">
+        <h2 class="text-lg font-bold mb-3">Recent Posts</h2>
+          <a href="/posts/" class="inline-block py-2 underline dark:prose-invert">All posts &raquo;</a> -->
       </div>
       <div>
-        <div class="flex justify-between gap-2 mb-1">
-          <h2 class="text-lg font-bold mb-3">My Projects</h2>
-          <a href="/projects/" class="inline-block py-2 underline dark:w-invert">All projects &raquo;</a>
-        </div>
+        <!-- {
+          posts.map((post: BlogPost) => (
+            <PostItem post={post} />
+          ))
+        }       
       </div>
-		</main> -->
-	</div>
+      <div class="text-right">
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-between gap-2 mb-1">
+        <h2 class="text-lg font-bold mb-3">My Projects</h2>
+        <a href="/projects/" class="inline-block py-2 underline dark:w-invert">All projects &raquo;</a>
+      </div>
+    </div>
+  </main> -->
 </BaseLayout>

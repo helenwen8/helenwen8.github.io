@@ -7,21 +7,12 @@ export default {
       container: {
         center: true,
         padding: '1rem',
+        leading: '1rem',
         screens: {
           xl: '1024px'
         }
       },
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
-        'primary': '#3b82f6', // A custom brand blue
-        'secondary': '#10b981', // A custom brand green
-        'dark-blue': '#1a2b3c',
-        'light-gray': '#f0f2f5',
-        'gray': { // Using a scale for neutrals
-          100: '#f3f4f6',
-          500: '#6b7280',
-          900: '#111827',
         },
         // ... and so on
       },
@@ -49,7 +40,6 @@ export default {
           }
         }
       }
-    },
-	},
+  },
 	plugins: [require('@tailwindcss/typography')],
 }
